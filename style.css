@@ -1,0 +1,529 @@
+/* Basic Reset */
+@font-face {
+  font-family: "Marker";
+  src: url("MarkerFelt.ttc"); /* Consider hosting your font online for better compatibility */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#svg1 {
+  margin: 0 auto;
+}
+
+#svg2,
+#svg3,
+#svg4,
+#svg5,
+#svg6,
+#svg7,
+#svg8,
+#svg9 {
+  display: block; /* Ensures that the SVG is block-level for correct margin handling */
+  margin: auto; /* Centers the SVG horizontally */
+  padding: 50px 0px 0px;
+  width: 60%; /* SVG takes full width of the container */
+}
+
+#svg7 {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+#svg6 {
+  padding: 50px 0px 0px;
+}
+
+#svg8 {
+  padding: 0px 0px;
+}
+
+#svgCake {
+  display: block; /* Ensures that the SVG is block-level for correct margin handling */
+  margin: auto; /* Centers the SVG horizontally */
+  padding: 50px 0px;
+  width: 70%; /* SVG takes full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  position: relative; /* Position relative to enable top adjustment */
+  top: -20%; /* Shifts the SVG up to 'crop' the top 20% */
+}
+
+#main-img {
+  max-width: 100%; /* Ensures image is responsive */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 100px auto 20px; /* Centers image and adds bottom margin */
+}
+
+section {
+  padding: 20px 20px; /* Adjusted padding */
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+#about {
+  position: relative;
+  padding: 0px;
+  width: 60%; /* Adjust the width as needed */
+  height: 60%; /* Set the height to 60% to 'crop' 20% from the top and bottom */
+  overflow: hidden; /* Hide the parts of the SVG that overflow this container */
+  margin: auto;
+  background-color: #e2e0e0;
+}
+
+#about h2 {
+  padding: 50px;
+}
+
+#about p {
+  padding: 20px 100px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 0px; /* Adjusted padding for responsiveness */
+  background-color: #f4f4f4;
+}
+
+header h1 {
+  font-family: "Marker";
+  margin-left: 10%; /* Sets the margin to 20% from the left of the header */
+  flex-grow: 1; /* Allows the h1 to grow if needed */
+}
+
+header {
+  display: flex; /* Establishes the header as a flex container */
+  align-items: center; /* Vertically centers the flex items */
+  justify-content: space-between; /* Spaces out the flex items */
+  padding: 20px 10px; /* Add padding on the left and right if needed */
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right to stretch across the screen */
+  z-index: 1000; /* Ensures the header is above other content */
+  background-color: #fff; /* Add a background color so the content below doesn't show through */
+}
+
+#navList {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0 10% 0 0; /* Sets the margin on the right to 20% */
+  display: flex; /* Positions list items in a horizontal line */
+}
+
+#navList li {
+  margin: 10px 20px; /* Adds a small space between list items */
+}
+
+#navList li a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits the text color from the parent element */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+#navList li a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Menu */
+#menuContainer {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Start off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the container */
+}
+
+#toggleButton {
+  cursor: pointer;
+  font-size: 24px;
+  position: fixed;
+  right: 10%;
+  top: 20px;
+  z-index: 2; /* Ensure it's visible above other content */
+  display: none; /* Hide the hamburger button by default */
+}
+#toggleButton.active {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 15%; /* Adjust based on the width of the menu */
+}
+
+#navMenu {
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+  margin-top: 60px; /* Give some space for the toggle button */
+  text-align: center;
+  font-size: 2em;
+}
+
+#navMenu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+#navMenu li a:hover {
+  color: rgba(0, 162, 255, 0.952);
+  transition: all ease-in-out 0.3s;
+}
+
+.showMenu {
+  right: 0; /* Bring the menu into view */
+}
+
+#education {
+  padding: 0;
+}
+
+#work {
+}
+
+.timeline-container {
+  position: relative;
+  padding: 0px;
+  width: 60%; /* Adjust the width as needed */
+  height: 60%; /* Set the height to 60% to 'crop' 20% from the top and bottom */
+  overflow: hidden; /* Hide the parts of the SVG that overflow this container */
+  margin: auto;
+  background-color: #e2e0e0;
+}
+
+.content-container {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  overflow: hidden; /* Hide the parts of the SVG that overflow this container */
+  margin: auto;
+  width: 90%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+.learn-more {
+  display: inline-block;
+  color: black; /* White text */
+  padding: 2px 20px;
+  border-radius: 2px;
+  text-align: right;
+  margin-top: 10px;
+  margin-left: auto; /* Pushes the link to the right within its container */
+  margin-right: 20%;
+  border: 2px solid #007bff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.learn-more:hover {
+  color: white; /* Darker blue on hover */
+  background-color: #007bff;
+}
+
+.education-section,
+.experience-section {
+  margin-bottom: 50px;
+}
+
+.timeline-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.timeline-icon {
+  background: #eee;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.timeline-panel {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.timeline-panel h3 {
+  margin-top: 0;
+}
+
+#contact {
+  max-width: 1490px;
+  margin: 100px auto;
+  padding: 100px 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-form {
+  flex: 1; /* This allows the form to take up remaining space */
+  padding: 20px;
+}
+
+#placeholderimg {
+  flex: 1; /* This allows the image container to take up remaining space */
+  padding: 20px;
+  width: 300px;
+}
+
+#contact-form h2 {
+  margin-top: 0;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for curved lines and other decorative elements will be more complex and may require SVGs or pseudo-elements */
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #toggleButton {
+    display: block; /* Show the hamburger button */
+  }
+
+  #navList {
+    display: none; /* Hide the navList */
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure the header extends to the right edge */
+    width: 100%;
+    z-index: 10; /* Higher than the other content */
+    background-color: #fff; /* Assuming your header has a white background */
+  }
+
+  main {
+    padding-top: 100px; /* This should match the height of your header */
+  }
+}
+
+@media (max-width: 1199px) {
+  .timeline-container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  #svg1,
+  #svg2,
+  #svg3,
+  #svg4,
+  #svg5,
+  #svg6,
+  #svg7,
+  #svg8,
+  #svg9 {
+    width: 80%; /* Adjust SVG width to fit within mobile screens */
+    margin-top: 0px; /* Add some space above the SVG */
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about p {
+    padding: 20px;
+  }
+
+  .learn-more {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    position: relative; /* Change from absolute to relative */
+    top: auto; /* Remove the top positioning */
+    left: auto; /* Remove the left positioning */
+    transform: none; /* Remove the transform */
+    width: 100%; /* Adjust width for mobile screens */
+    font-size: 1em; /* Adjust font size if necessary */
+  }
+
+  #about p {
+    padding: 0px 20px 50px;
+  }
+
+  #work {
+    padding: 0px;
+  }
+
+  #svg1 {
+    width: 100%; /* Adjust SVG width to fit within mobile screens */
+    display: none;
+  }
+
+  #svg2 {
+    padding: 0px;
+  }
+
+  #svg2,
+  #svg3,
+  #svg4,
+  #svg5,
+  #svg6,
+  #svg7,
+  #svg8,
+  #svg9 {
+    width: 100%; /* Adjust SVG width to fit within mobile screens */
+    margin-top: 0px; /* Add some space above the SVG */
+  }
+
+  .learn-more {
+    margin-right: 0%;
+  }
+
+  #main-img {
+    margin-top: 20px; /* Ensure there's space above the main image */
+  }
+
+  header {
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px 5%; /* Adjust padding for smaller screens */
+    align-items: flex-start; /* Align items to the start of the flex container */
+  }
+
+  header h1 {
+    margin: 10px 0; /* Adjust spacing around the h1 */
+    text-align: left; /* Aligns the text to the left */
+  }
+
+  #navList li {
+    margin: 5px 10px; /* Reduce spacing between navigation items */
+  }
+
+  /* Ensure content doesn't overlap with fixed header */
+  body {
+    padding-top: 100px; /* Adjust based on actual header height */
+  }
+
+  #toggleButton {
+    right: 5%; /* Adjust the position of the toggle button */
+  }
+
+  #menuContainer {
+    right: -100%; /* Start off-screen to the right */
+  }
+
+  #contact {
+    padding: 0;
+  }
+
+  #contact h2 {
+    text-align: center;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #contact-form {
+    flex: 1; /* This allows the form to take up remaining space */
+    padding: 20px;
+  }
+
+  #placeholderimg {
+    flex: 1; /* This allows the image container to take up remaining space */
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+/* Styles when the screen width is more than 768px */
+@media (min-width: 768px) {
+  #svg1 {
+    width: 100%; /* SVG takes full width of the container */
+    margin-top: 0px; /* Maintain the top margin */
+    display: block; /* Ensure SVG is displayed */
+  }
+
+  #svg2 {
+    display: none; /* Ensure SVG is hidden */
+  }
+
+  #toggleButton {
+    display: none; /* Hide the hamburger button */
+  }
+
+  #navList {
+    display: flex; /* Show the navList */
+  }
+}
