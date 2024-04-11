@@ -129,7 +129,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0 0px; /* Adjusted padding for responsiveness */
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 header {
@@ -400,7 +400,7 @@ footer {
     background-color: #fff; /* Assuming your header has a white background */
   }
 
-  #indexx-main {
+  #index-main {
     padding-top: 100px; /* This should match the height of your header */
   }
 }
