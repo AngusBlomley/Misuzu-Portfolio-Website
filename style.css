@@ -35,6 +35,7 @@ h6 {
   margin: auto; /* Centers the SVG horizontally */
   padding: 50px 0px 0px;
   width: 60%; /* SVG takes full width of the container */
+  padding: 10px;
 }
 
 #svg7 {
@@ -50,14 +51,24 @@ h6 {
   padding: 0px 0px;
 }
 
+.cake-container {
+  padding: 0px;
+  margin: 100px auto;
+  width: 50%;
+}
+
 #svgCake {
   display: block; /* Ensures that the SVG is block-level for correct margin handling */
   margin: auto; /* Centers the SVG horizontally */
-  padding: 50px 0px;
-  width: 70%; /* SVG takes full width of the container */
+  width: 100%; /* SVG takes full width of the container */
   height: auto; /* Maintain the aspect ratio */
   position: relative; /* Position relative to enable top adjustment */
-  top: -20%; /* Shifts the SVG up to 'crop' the top 20% */
+  padding-top: 200px;
+}
+
+#branding {
+  width: 70%;
+  margin: 0px auto;
 }
 
 #main-img {
@@ -87,12 +98,30 @@ section {
   background-color: #e2e0e0;
 }
 
+#about img {
+  max-width: 200px;
+  box-shadow: #333;
+  margin: 20px 0px;
+  border-radius: 100%;
+}
+
 #about h2 {
-  padding: 50px;
+  padding: 40px 0px 0px 0px;
 }
 
 #about p {
-  padding: 20px 100px;
+  padding: 20px 20px;
+}
+
+.content-wrapper {
+  display: flex; /* Use flexbox to align image and paragraph */
+  justify-content: center; /* Center align the flex items horizontally */
+  align-items: center; /* Center align the flex items vertically */
+  margin: 0px 50px;
+}
+
+.p2 {
+  margin: -20px 40px;
 }
 
 body {
@@ -103,23 +132,24 @@ body {
   background-color: #f4f4f4;
 }
 
-header h1 {
-  font-family: "Marker";
-  margin-left: 10%; /* Sets the margin to 20% from the left of the header */
-  flex-grow: 1; /* Allows the h1 to grow if needed */
-}
-
 header {
   display: flex; /* Establishes the header as a flex container */
   align-items: center; /* Vertically centers the flex items */
   justify-content: space-between; /* Spaces out the flex items */
-  padding: 20px 10px; /* Add padding on the left and right if needed */
+  padding: 5px 10px; /* Add padding on the left and right if needed */
   position: fixed; /* Fixed position */
-  top: 0; /* Align to the top */
+  top: 0px; /* Align to the top */
   left: 0; /* Align to the left */
   right: 0; /* Align to the right to stretch across the screen */
   z-index: 1000; /* Ensures the header is above other content */
   background-color: #fff; /* Add a background color so the content below doesn't show through */
+  height: 100px;
+}
+
+#misuzu {
+  height: 35px;
+  font-family: "Marker";
+  margin: 0 0 0 10%; /* Sets the margin on the right to 20% */
 }
 
 #navList {
@@ -162,13 +192,13 @@ header {
   font-size: 24px;
   position: fixed;
   right: 10%;
-  top: 20px;
+  top: 15px;
   z-index: 2; /* Ensure it's visible above other content */
   display: none; /* Hide the hamburger button by default */
 }
 #toggleButton.active {
   position: absolute;
-  top: 20px; /* Adjust as needed */
+  top: 35px;
   right: 15%; /* Adjust based on the width of the menu */
 }
 
@@ -202,6 +232,7 @@ header {
 }
 
 #work {
+  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.4); /* Add box-shadow */
 }
 
 .timeline-container {
@@ -369,7 +400,7 @@ footer {
     background-color: #fff; /* Assuming your header has a white background */
   }
 
-  main {
+  #indexx-main {
     padding-top: 100px; /* This should match the height of your header */
   }
 }
@@ -493,6 +524,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.4); /* Add box-shadow */
   }
 
   #contact-form {
@@ -504,6 +536,13 @@ footer {
     flex: 1; /* This allows the image container to take up remaining space */
     padding: 20px;
     width: 100%;
+  }
+  #branding {
+    width: 100%;
+  }
+  #svgCake {
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -526,4 +565,13 @@ footer {
   #navList {
     display: flex; /* Show the navList */
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
 }

@@ -70,5 +70,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add 'is-visible' class to the target element
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, { 
+        threshold: 0.1, // Adjust this value based on how much of the item should be visible before fading in
+    });
+
+    // Target elements to observe
+    const fadeElements = document.querySelectorAll('.item img, .content-wrapper img, #main-img');
+    fadeElements.forEach(el => {
+        observer.observe(el); // Start observing each element
+    });
+
 });
 
