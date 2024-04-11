@@ -1,7 +1,7 @@
 /* Basic Reset */
 @font-face {
   font-family: "Marker";
-  src: url("MarkerFelt.ttc"); /* Consider hosting your font online for better compatibility */
+  src: url("fonts/MarkerFelt.woff"); /* Consider hosting your font online for better compatibility */
 }
 
 * {
@@ -320,7 +320,7 @@ header {
 }
 
 #contact {
-  max-width: 1490px;
+  max-width: 1000px;
   margin: 100px auto;
   padding: 100px 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -336,14 +336,10 @@ header {
   padding: 20px;
 }
 
-#placeholderimg {
-  flex: 1; /* This allows the image container to take up remaining space */
-  padding: 20px;
-  width: 300px;
-}
-
 #contact-form h2 {
   margin-top: 0;
+  text-align: center;
+  padding: 0 0 20px 0;
 }
 
 #contact-form label {
@@ -520,6 +516,7 @@ footer {
 
   #contact h2 {
     text-align: center;
+    font-family: "Marker";
   }
 
   .contact-form-container {
