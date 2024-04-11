@@ -129,7 +129,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0 0px; /* Adjusted padding for responsiveness */
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 header {
@@ -144,6 +144,12 @@ header {
   z-index: 1000; /* Ensures the header is above other content */
   background-color: #fff; /* Add a background color so the content below doesn't show through */
   height: 100px;
+}
+
+#refresh {
+  height: 35px;
+  font-family: "Marker";
+  margin: 0 0 0 10%; /* Sets the margin on the right to 20% */
 }
 
 #misuzu {
@@ -398,10 +404,6 @@ footer {
     width: 100%;
     z-index: 10; /* Higher than the other content */
     background-color: #fff; /* Assuming your header has a white background */
-  }
-
-  #index-main {
-    padding-top: 100px; /* This should match the height of your header */
   }
 }
 
