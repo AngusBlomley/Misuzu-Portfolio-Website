@@ -57,13 +57,21 @@ h6 {
   width: 50%;
 }
 
-#svgCake {
+#svgCake1 {
   display: block; /* Ensures that the SVG is block-level for correct margin handling */
   margin: auto; /* Centers the SVG horizontally */
   width: 100%; /* SVG takes full width of the container */
   height: auto; /* Maintain the aspect ratio */
   position: relative; /* Position relative to enable top adjustment */
   padding-top: 200px;
+}
+
+#svgCake2 {
+  display: block; /* Ensures that the SVG is block-level for correct margin handling */
+  margin: auto; /* Centers the SVG horizontally */
+  width: 100%; /* SVG takes full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  position: relative; /* Position relative to enable top adjustment */
 }
 
 #branding {
@@ -95,7 +103,7 @@ section {
   height: 60%; /* Set the height to 60% to 'crop' 20% from the top and bottom */
   overflow: hidden; /* Hide the parts of the SVG that overflow this container */
   margin: auto;
-  background-color: #e2e0e0;
+  background-color: #fff;
 }
 
 #about img {
@@ -107,17 +115,30 @@ section {
 
 #about h2 {
   padding: 40px 0px 0px 0px;
+  text-align: center;
+  font-family: Marker;
+  font-size: 2em;
 }
 
 #about p {
+  max-width: 900px;
   padding: 20px 20px;
+  text-align: center;
+}
+
+#line {
+  position: absolute;
+  height: 900px;
+  width: 100%;
+  margin: -600px auto -60px auto;
+  z-index: 6;
 }
 
 .content-wrapper {
   display: flex; /* Use flexbox to align image and paragraph */
   justify-content: center; /* Center align the flex items horizontally */
   align-items: center; /* Center align the flex items vertically */
-  margin: 0px 50px;
+  margin: 0px 0px 50px 0px;
 }
 
 .p2 {
@@ -156,6 +177,11 @@ header {
   height: 35px;
   font-family: "Marker";
   margin: 0 0 0 10%; /* Sets the margin on the right to 20% */
+}
+
+#misuzu-footer {
+  height: 30px;
+  margin: 20px auto;
 }
 
 #navList {
@@ -272,17 +298,14 @@ header {
   padding: 2px 20px;
   border-radius: 2px;
   text-align: right;
-  margin-top: 10px;
-  margin-left: auto; /* Pushes the link to the right within its container */
-  margin-right: 20%;
-  border: 2px solid #007bff;
+  margin: 20px 21% 100px auto;
+  border: 2px solid #e2e0e0;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
 .learn-more:hover {
-  color: white; /* Darker blue on hover */
-  background-color: #007bff;
+  background-color: #e2e0e0;
 }
 
 .education-section,
@@ -340,6 +363,8 @@ header {
   margin-top: 0;
   text-align: center;
   padding: 0 0 20px 0;
+  font-family: Marker;
+  font-size: 2em;
 }
 
 #contact-form label {
@@ -378,6 +403,14 @@ header {
 footer {
   background: #333;
   color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#footer2 {
+  background: #e2e0e0;
+  color: black;
   text-align: center;
   padding: 10px 0;
   width: 100%;
@@ -539,7 +572,11 @@ footer {
   #branding {
     width: 100%;
   }
-  #svgCake {
+  #svgCake1 {
+    padding: 0px;
+    margin: 0px;
+  }
+  #svgCake2 {
     padding: 0px;
     margin: 0px;
   }
