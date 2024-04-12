@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             menuContainer.style.right = "0px"; // Open the menu
             toggleButton.innerHTML = "✖"; // Change to 'X' icon
-            toggleButton.style.color = "white"; // Change color to white
+            toggleButton.style.color = "black"; // Change color to white
             toggleButton.classList.add("active");
         }
     }

@@ -212,7 +212,7 @@ header {
   right: -250px; /* Start off-screen */
   width: 250px;
   height: 100%;
-  background-color: black;
+  background-color: #e2e0e0;
   transition: right 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -230,8 +230,8 @@ header {
 }
 #toggleButton.active {
   position: absolute;
-  top: 35px;
-  right: 15%; /* Adjust based on the width of the menu */
+  top: 18px;
+  right: 8%; /* Adjust based on the width of the menu */
 }
 
 #navMenu {
@@ -240,11 +240,11 @@ header {
   padding: 20px 0;
   margin-top: 60px; /* Give some space for the toggle button */
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #navMenu li a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   display: block;
@@ -342,7 +342,6 @@ header {
   max-width: 1000px;
   margin: 0px auto 100px auto;
   padding: 50px 150px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-container {
@@ -465,6 +464,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #misuzu {
+    height: 20px;
+    font-family: "Marker";
+    margin: 0 0 0 0%; /* Sets the margin on the right to 20% */
+  }
+
+  #refresh {
+    margin: 0;
+  }
+
   #about {
     position: relative; /* Change from absolute to relative */
     top: auto; /* Remove the top positioning */
@@ -515,6 +524,7 @@ footer {
     flex-direction: column; /* Stack items vertically */
     padding: 20px 5%; /* Adjust padding for smaller screens */
     align-items: flex-start; /* Align items to the start of the flex container */
+    height: 60px;
   }
 
   header h1 {
@@ -552,7 +562,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.4); /* Add box-shadow */
   }
 
   #contact-form {
@@ -575,6 +584,12 @@ footer {
   #svgCake2 {
     padding: 0px;
     margin: 0px;
+  }
+
+  .content-container {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
   }
 }
 
