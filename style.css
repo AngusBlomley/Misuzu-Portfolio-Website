@@ -86,6 +86,92 @@ h6 {
   margin: 100px auto 20px; /* Centers image and adds bottom margin */
 }
 
+/*#######EDITORIAL SECTION####### */
+
+#editorial-section {
+  width: 100%;
+  margin: 160px auto; /* This should center the image */
+}
+
+#editorial-section p {
+  margin: 50px 0;
+}
+
+#editorial-section h3 {
+  padding: 0px 0 40px 0px;
+  margin-right: 15px;
+  font-size: 1em;
+  font-weight: 100;
+  font-family: "Arial", sans-serif; /* Choose an appropriate font */
+  text-align: right; /* Aligns the text to the right of its container */
+}
+
+#spacing {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#editorial-image1,
+#editorial-image2,
+#editorial-image3 {
+  width: 100%;
+  margin: 0 auto; /* This should center the image */
+}
+
+#editorial-image3 {
+  width: 100%;
+}
+
+#editorial-description {
+  font-family: "Arial", sans-serif; /* Choose an appropriate font */
+  max-width: 1000px; /* Adjust the width as necessary */
+  margin: 0 auto; /* Center the div */
+  background-color: #ffffff; /* Set the background color */
+}
+
+#editorial-description h2 {
+  font-size: 18px; /* Match font-size to the image */
+  color: #333333; /* Dark text color for the headings */
+  margin-bottom: 10px; /* Space between the heading and paragraph */
+  font-family: Marker;
+  font-size: 1.5em;
+}
+
+#editorial-description p {
+  font-size: 14px; /* Match font-size to the image */
+  line-height: 1.6; /* Spacing between lines */
+  color: #666666; /* Lighter text color for the paragraph */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+#editorial-description :nth-child(1) p,
+#editorial-description :nth-child(2) p {
+  margin: 0 0 40px 0;
+}
+
+#colour-scheme {
+  display: flex; /* Aligns the color blocks in a row */
+  justify-content: space-between; /* Distributes space evenly between elements */
+  max-width: 1000px; /* Adjust the width as necessary */
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#colour-scheme h2 {
+  font-size: 16px; /* Size of the color scheme heading */
+  font-family: Marker;
+  font-size: 1.5em;
+  padding-right: 30px;
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+#colour-scheme-img {
+  max-width: 100%;
+  box-shadow: 0 0 10px 1px #0000002a;
+}
+
+/* ########END OF EDITORIAL SECTION######### */
+
 section {
   padding: 20px 20px; /* Adjusted padding */
 }
@@ -590,6 +676,51 @@ footer {
     padding: 0px;
     margin: 0px;
     width: 100%;
+  }
+
+  #editorial-section {
+    width: 100%;
+    margin: 0px auto; /* This should center the image */
+    padding: 10px;
+  }
+
+  #editorial-image1,
+  #editorial-image2,
+  #editorial-image3 {
+    width: 100%;
+    margin: auto; /* This should center the image */
+  }
+
+  #misuzu-footer {
+    height: 20px;
+  }
+
+  #copyright {
+    font-size: 0.8em;
+  }
+
+  #spacing {
+    width: 95%;
+  }
+
+  #colour-scheme {
+    display: block;
+    max-width: 1000px; /* Adjust the width as necessary */
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #colour-scheme-img {
+    box-shadow: 0 0 10px 1px #0000002a;
+  }
+
+  #editorial-section h3 {
+    padding: 0px 0 40px 0px;
+    margin-right: 15px;
+    font-size: 0.6em;
+    font-weight: 100;
+    font-family: "Arial", sans-serif; /* Choose an appropriate font */
+    text-align: right; /* Aligns the text to the right of its container */
   }
 }
 
