@@ -177,4 +177,8 @@ p {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  .color:nth-child(1) {
+    width: 100%;
+  }
 }
