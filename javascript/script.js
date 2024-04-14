@@ -90,3 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('start');
+            }
+        });
+    }, {
+        threshold: 0.1, // Adjust as needed
+    });
+
+    // Target elements to observe
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((box) => observer.observe(box));
+});

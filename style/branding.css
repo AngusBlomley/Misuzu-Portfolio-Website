@@ -1,5 +1,3 @@
-/* Start of CSS Document*/
-
 /*Typography*/
 @font-face {
   font-family: "Marker";
@@ -20,34 +18,108 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Marker", sans-serif;
 }
 
-/*Branding Section Styles*/
-#branding {
-  padding: 0px;
-  margin: 100px auto;
-  width: 20%;
+h3 {
+  margin-right: 50px;
+  width:50px
 }
 
-#branding div :nth-child(1) {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#svgCake2 {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#branding {
-  width: 70%;
-  margin: 0px auto;
-}
-
-#main-img {
-  max-width: 100%;
-  height: auto;
+/*Branding Main*/
+main {
   display: block;
-  margin: 100px auto 20px;
+  margin: 0 auto;
+  padding: 0 10%;
+  width:70%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+p {
+  margin:0 0 100px 0;
+}
+
+#asset1,
+#asset2,
+#asset3,
+#asset4 {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 100%;
+}
+
+#asset4 {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 80%;
+}
+
+.software {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.design {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.color-scheme-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 0 0 100px 0;
+}
+
+.colors {
+  display: flex;
+}
+
+.color {
+  padding: 10px;
+  width: 100px; 
+  height: 100px; 
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  color: black; 
+  font-size: 0.75em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+
+.color:nth-child(1) {
+  width: 400px;
+}
+
+.box {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.box.start {
+  animation-play-state: running;
+}
+
+.box1 {
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.box2 {
+  animation-duration: 1s;
+  animation-delay: 0.8s; 
+}
+
+.box3 {
+  animation-duration: 1s;
+  animation-delay: 1.1s; 
+}
+
+.box4 {
+  animation-duration: 1s;
+  animation-delay: 1.4s; 
 }
