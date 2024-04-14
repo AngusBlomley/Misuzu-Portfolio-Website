@@ -179,6 +179,6 @@ p {
   }
 
   .color:nth-child(1) {
-    width: 100px;
+    width: 100%;
   }
 }
