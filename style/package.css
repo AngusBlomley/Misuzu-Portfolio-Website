@@ -1,0 +1,24 @@
+/* Start of CSS Document*/
+
+/*Typography*/
+@font-face {
+  font-family: "Marker";
+  src: url("fonts/MarkerFelt.woff");
+}
+
+/*All*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*All Website Headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}

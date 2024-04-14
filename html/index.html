@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misuzu Portfolio</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/global.css" />
+    <script src="/javascript/script.js"></script>
+  </head>
+
+  <body id="home">
+
+    <header>
+
+      <a id="logo" href="/html/index.html">
+        <img id="misuzu" src="/images/index/misuzu.svg" alt="misuzu" />
+      </a>
+      
+      <ul id="navlist" class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div id="menucontainer">
+        <div id="togglebutton" class="hamburger" onclick="togglemenu()">☰</div>
+        <ul id="navmenu" class="hidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+      <img
+        id="main-img"
+        src="/images/index/main.webp"
+        alt="main"
+        class="simple-fade-in"
+      />
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="content-wrapper">
+          <p>
+            <strong>Hello!</strong> I'm Misuzu Kanzaki, a creative spirit whose journey has led me from the vibrant landscapes of Japan to the rich cultural tapestries of Ireland and Germany, and finally to the UK, where I've found my calling.Born in 1996, I've always been fascinated by the interplay of visuals and user experience. This passion has blossomed into a thriving career in graphic design, UX design, and video editing. My work is a blend of meticulous Japanese precision and a boundless zest for exploring new creative horizons.
+
+            <br><br>My upbringing in Japan instilled in me a deep respect for punctuality and dedication. I carry these values into every project, ensuring that my work is not only innovative but also timely and of the highest quality.
+
+            <br><br>In the UK, I'm excited to continue my creative journey, seeking opportunities that challenge and inspire. My goal is to create designs that aren't just aesthetically pleasing, but also intuitively connect with users, enhancing their experience in the digital world.
+
+            <br><br>Let's create something extraordinary together!
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <img id="asset1" 
+          src="/images/index/asset 1.svg" 
+          alt="asset 1" 
+        />
+        <div class="item">
+          <img
+            id="asset2"
+            src="/images/index/asset 2.svg"
+            alt="asset 2"
+            class="fade-in"
+          />
+        </div>
+      </section>
+
+      <section id="work">
+
+          <div class="item">
+            <img
+              id="asset3"
+              src="/images/index/asset 3.webp"
+              alt="asset 3"
+              class="fade-in"
+            />
+          </div>
+          
+          <div class="item">
+            <a href="/html/branding.html" class="learn-more">Learn more</a>
+          </div>
+
+          <div class="item">
+            <img
+              id="asset4"
+              src="/images/index/asset 4.webp"
+              alt="asset 4"
+              class="fade-in"
+            />
+            <a href="/html/editorial.html" class="learn-more">Learn more</a>
+          </div>
+
+          <div class="item">
+            <img
+              id="asset5"
+              src="/images/index/asset 5.webp"
+              alt="asset 5"
+              class="fade-in"
+            />
+            <a href="/html/logo.html" class="learn-more">Learn more</a>
+          </div>
+
+          <div class="item">
+            <img
+              id="asset6"
+              src="/images/index/asset 6.webp"
+              alt="asset 6"
+              class="fade-in"
+            />
+            <a href="/html/package.html" class="learn-more">Learn more</a>
+          </div>
+
+          <div class="item">
+            <img
+              id="asset7"
+              src="/images/index/asset 7.webp"
+              alt="asset 7"
+              class="fade-in"
+            />
+            <a href="/html/web.html" class="learn-more">Learn more</a>
+          </div>
+          
+      </section>
+
+      <section id="contact">
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-grid">
+            <h2>Contact</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Misuzu Kanzaki. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>

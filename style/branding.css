@@ -1,0 +1,53 @@
+/* Start of CSS Document*/
+
+/*Typography*/
+@font-face {
+  font-family: "Marker";
+  src: url("fonts/MarkerFelt.woff");
+}
+
+/*All*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*All Website Headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Branding Section Styles*/
+#branding {
+  padding: 0px;
+  margin: 100px auto;
+  width: 20%;
+}
+
+#branding div :nth-child(1) {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#svgCake2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#branding {
+  width: 70%;
+  margin: 0px auto;
+}
+
+#main-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 100px auto 20px;
+}
