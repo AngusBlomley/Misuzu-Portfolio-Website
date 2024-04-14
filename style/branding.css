@@ -29,8 +29,8 @@ h3 {
 /*Branding Main*/
 main {
   display: block;
-  margin: 0 auto;
-  padding: 0 10%;
+  margin: 0px auto 0 auto;
+  padding: 100px 10% 0 10%;
   width:70%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -45,7 +45,7 @@ p {
 #asset4 {
   display: block;
   margin: 0 auto 50px auto;
-  width: 100%;
+  width: 80%;
 }
 
 #asset4 {
@@ -122,4 +122,59 @@ p {
 .box4 {
   animation-duration: 1s;
   animation-delay: 1.4s; 
+}
+
+/*Screen Formats*/
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  #asset1,
+  #asset2,
+  #asset3 {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 100%;
+  }
+
+  #asset4 {
+    width: 100%;
+  }
+
+  .software {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .design {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .color-scheme-container,
+  .colors {
+    flex-direction: column; 
+  }
+
+  .color {
+    width: 100%; 
+  }
+
+  .software, .design {
+    flex-direction: column;
+  }
+
+  .color-scheme-container h3 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
