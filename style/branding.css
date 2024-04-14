@@ -181,4 +181,8 @@ p {
   .color:nth-child(1) {
     width: 100%;
   }
+  
+  .color:nth-child(1) {
+    width: 100%;
+  }
 }
