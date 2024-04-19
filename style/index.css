@@ -228,6 +228,11 @@
 
   #asset2 {
     display: block;
+    z-index: 999;
+  }
+
+  #asset3 {
+    margin-top: 50px;
   }
 
   #work {
@@ -249,10 +254,13 @@
   .learn-more {
     margin-right: 0%;
     margin-bottom: 40px;
+    font-size: 0.8em;
+    padding: 0 10px;
   }
 
   #contact {
-    padding: 50px;
+    margin: 0px 0px;
+    padding: 0px 50px 40px;
   }
 
   #contact h2 {
@@ -267,6 +275,10 @@
   #me {
     height: 100px; 
     border-radius: 50%; 
+  }
+
+  footer p {
+    font-size: 0.5em;
   }
 }
 

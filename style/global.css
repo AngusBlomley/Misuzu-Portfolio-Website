@@ -130,12 +130,6 @@ header {
     transition: all ease-in-out 0.3s;
 }
 
-#navmenu li:first-child {
-  padding: 5px 0px;
-  border-bottom: 1px solid black;
-  font-weight: 700;
-}
-
 #navmenu li a:first-child {
   padding-bottom: 0px;
 }
