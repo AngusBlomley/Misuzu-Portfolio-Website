@@ -99,9 +99,47 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }, {
         threshold: 0.1, // Adjust as needed
-    });
+    })
 
     // Target elements to observe
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => observer.observe(box));
+
+    function startAnimations() {
+        const flash = document.getElementById('flash');
+        const whiteFlash = document.getElementById('white-flash');
+        const character = document.getElementById('character');
+
+        // Display the camera flash and start the animation
+        flash.style.display = 'block';
+        flash.style.opacity = '1';
+
+        // After the camera flash animation ends, start the white flash
+        flash.addEventListener('animationend', () => {
+            whiteFlash.style.display = 'block';
+            whiteFlash.style.opacity = '1';
+        });
+
+        // Listen for the end of the white flash animation
+        whiteFlash.addEventListener('animationend', () => {
+            // Hide the white flash and show the character
+            whiteFlash.style.display = 'none';
+            character.style.opacity = '1'; // This triggers the character fadeIn animation
+        });
+    }
+
+    setTimeout(() => {
+        whiteFlash.style.display = 'block';
+        whiteFlash.style.opacity = '1';
+    }, 500); // This timeout starts the flash half a second after the camera flash
+
+    // Listen for the end of the white flash animation to hide the element
+    whiteFlash.addEventListener('animationend', () => {
+        whiteFlash.style.display = 'none';
+        whiteFlash.style.opacity = '0';
+        // Start the character animation here if needed
+        character.style.opacity = '1'; // This will trigger the fadeIn animation
+    });
 });
+
+

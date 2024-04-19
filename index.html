@@ -39,13 +39,16 @@
     </header>
 
     <main>
-      <img
-        id="main-img"
-        src="images/index/main.webp"
-        alt="main"
-        class="simple-fade-in"
-      />
-
+      <div id="main-img-container">
+        <img
+          id="main-img"
+          src="images/index/main.webp"
+          alt="main"
+        />
+        <div id="white-flash"></div>
+        <img id="flash" src="images/index/flash.svg" alt="flash">
+        <img id="character" src="images/index/character.svg" alt="flash">
+      </div>
       <section id="about">
         <h2>About Me</h2>
         <div class="content-wrapper">
@@ -134,20 +137,14 @@
       </section>
 
       <section id="contact">
-        <div class="contact-form-container">
-          <form id="contact-form" class="contact-grid">
-            <h2>Contact</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
+        <img id="me" src="/images/index/me.jpg" alt="me">
+        <div class="contact-container">
+          <div class="contact-information-container">
+            <h2>Get In Touch</h2>
+            <p>Misuzu Kanzaki</p>
+            <p>misuzukanzaki12@gmail.com</p>
+            <p>+44 787 346 9154</p>
+          </div>
         </div>
       </section>
     </main>
