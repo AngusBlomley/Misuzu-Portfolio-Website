@@ -50,9 +50,9 @@ header {
 }
   
 #misuzu {
-    height: 35px;
+    height: 20px;
     font-family: "marker";
-    margin: 0 0 0 10%;
+    margin: 5% 0 0 20%;
 }
   
 #navlist {
@@ -70,6 +70,10 @@ header {
     text-decoration: none;
     color: inherit;
     white-space: nowrap;
+}
+
+#navlist li a :nth-child(1) {
+  border-bottom: 1px solid black;
 }
   
 #navlist li a:hover {
@@ -140,7 +144,7 @@ footer {
 }
 
 #misuzu-footer {
-  height: 30px;
+  height: 15px;
   margin: 10px auto;
 }
 
@@ -150,6 +154,10 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+}
+
+#license {
+  font-size: 0.5em;
 }
 
 /*Screen Formats*/

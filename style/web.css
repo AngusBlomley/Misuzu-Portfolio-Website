@@ -1,24 +1,46 @@
-/* Start of CSS Document*/
-
-/*Typography*/
-@font-face {
-  font-family: "Marker";
-  src: url("fonts/MarkerFelt.woff");
+#asset1-desktop,
+#asset2-desktop,
+#asset3-desktop,
+#asset4-desktop,
+#asset5-desktop {
+  display: block;
+  width: 53%;
+  margin: 50px auto;
 }
 
-/*All*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#asset1-mobile,
+#asset2-mobile,
+#asset3-mobile,
+#asset4-mobile,
+#asset5-mobile,
+#asset6-mobile,
+#asset7-mobile {
+  display: none;
 }
 
-/*All Website Headers*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+@media (max-width: 768px) {
+  #asset1-desktop,
+  #asset2-desktop,
+  #asset3-desktop,
+  #asset4-desktop,
+  #asset5-desktop {
+    display: none;
+  }
+
+  #asset1-mobile,
+  #asset2-mobile,
+  #asset3-mobile,
+  #asset4-mobile,
+  #asset5-mobile,
+  #asset6-mobile,
+  #asset7-mobile {
+    display: block;
+    width: 100%;
+    margin: 0px auto 50px auto;
+    padding: 20px;
+  }
+
+  #asset1-mobile {
+    padding-left: 0px;
+  }
 }

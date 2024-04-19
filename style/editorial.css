@@ -1,174 +1,21 @@
-/* Start of CSS Document*/
-
-/*Typography*/
-@font-face {
-  font-family: "Marker";
-  src: url("fonts/MarkerFelt.woff");
+#main-img {
+  display: block;
+  width: 65%;
+  margin: 50px auto;
 }
 
-/*All*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#mobile-img {
+  display: none;
 }
-
-/*All Website Headers*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}
-
-/*Editorial Section*/
-
-#editorial-section {
-  width: 100%;
-  margin: 160px auto;
-}
-
-#editorial-section p {
-  margin: 50px 0;
-}
-
-#editorial-section h3 {
-  padding: 0px 0 40px 0px;
-  margin-right: 15px;
-  font-size: 1em;
-  font-weight: 100;
-  font-family: "Arial", sans-serif;
-  text-align: right;
-}
-
-#spacing {
-  width: 60%;
-  margin: 0 auto;
-}
-
-#editorial-image1,
-#editorial-image2,
-#editorial-image3 {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#editorial-image3 {
-  width: 100%;
-}
-
-#editorial-description {
-  font-family: "Arial", sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #ffffff;
-}
-
-#editorial-description h2 {
-  font-size: 18px;
-  color: #333333;
-  margin-bottom: 10px;
-  font-family: Marker;
-  font-size: 1.5em;
-}
-
-#editorial-description p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #666666;
-  margin-bottom: 20px;
-}
-
-#editorial-description :nth-child(1) p,
-#editorial-description :nth-child(2) p {
-  margin: 0 0 40px 0;
-}
-
-#colour-scheme {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-#colour-scheme h2 {
-  font-size: 16px;
-  font-family: Marker;
-  font-size: 1.5em;
-  padding-right: 30px;
-  margin-bottom: 10px;
-}
-
-#colour-scheme-img {
-  max-width: 100%;
-  box-shadow: 0 0 10px 1px #0000002a;
-}
-
-/* ########END OF EDITORIAL SECTION######### */
 
 @media (max-width: 768px) {
-#placeholderimg {
-    flex: 1;
-    padding: 20px;
-    width: 100%;
-  }
-  #branding {
-    width: 100%;
-  }
-  #svgcake1 {
-    padding: 0px;
-    margin: 0px;
-  }
-  #svgcake2 {
-    padding: 0px;
-    margin: 0px;
+  #main-img {
+    display: none;
   }
 
-  #editorial-section {
-    width: 100%;
-    margin: 0px auto;
-    padding: 10px;
-  }
-
-  #editorial-image1,
-  #editorial-image2,
-  #editorial-image3 {
-    width: 100%;
-    margin: auto;
-  }
-
-  #misuzu-footer {
-    height: 20px;
-  }
-
-  #copyright {
-    font-size: 0.8em;
-  }
-
-  #spacing {
-    width: 95%;
-  }
-
-  #colour-scheme {
+  #mobile-img {
     display: block;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-
-  #colour-scheme-img {
-    box-shadow: 0 0 10px 1px #0000002a;
-  }
-
-  #editorial-section h3 {
-    padding: 0px 0 40px 0px;
-    margin-right: 15px;
-    font-size: 0.6em;
-    font-weight: 100;
-    font-family: "arial", sans-serif;
-    text-align: right;
+    width: 100%;
+    margin: 0px auto 50px auto;
   }
 }
