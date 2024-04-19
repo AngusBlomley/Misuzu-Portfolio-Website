@@ -30,13 +30,22 @@ h3 {
 main {
   display: block;
   margin: 0px auto 0 auto;
-  padding: 100px 10% 0 10%;
+  padding: 0 10% 0 10%;
   width:70%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 p {
-  margin:0 0 100px 0;
+  margin:0 0 50px 0;
+}
+
+#title {
+  display: block;
+  height: 50px;
+  margin:0 auto 50px auto;
+}
+
+#asset2 {
+  margin: 0 auto 0px auto;
 }
 
 #asset1,
@@ -121,7 +130,8 @@ p {
 
 .box4 {
   animation-duration: 1s;
-  animation-delay: 1.4s; 
+  animation-delay: 1.4s;
+  color: white;
 }
 
 /*Screen Formats*/
@@ -134,6 +144,10 @@ p {
 
   p {
     margin-bottom: 20px;
+  }
+
+  #title {
+    height: 20px;
   }
 
   #asset1,
