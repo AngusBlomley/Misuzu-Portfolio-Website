@@ -1,20 +1,3 @@
-function toggleMenu() {
-    var menuContainer = document.getElementById("menucontainer");
-    var toggleButton = document.getElementById("togglebutton");
-
-    if (menuContainer.style.right == "0px") {
-        menuContainer.style.right = "-250px"; // Hide the menu
-        toggleButton.innerHTML = "☰"; // Change back to hamburger icon
-        toggleButton.style.color = "black"; // Change color back to black
-        toggleButton.classList.remove("active");
-    } else {
-        menuContainer.style.right = "0px"; // Show the menu
-        toggleButton.innerHTML = "✖"; // Change to 'X' icon
-        toggleButton.style.color = "white"; // Change color to white
-        toggleButton.classList.add("active");
-    }
-}
-
 function closeMenuOnClick() {
     document.querySelectorAll('#menucontainer a').forEach(menuItem => {
         menuItem.addEventListener('click', function () {
@@ -31,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function toggleMenu() {
         // Check if the menu is open by checking the 'active' class
         if (toggleButton.classList.contains("active")) {
-            menuContainer.style.right = "-250px"; // Close the menu
+            menuContainer.style.right = "-100%"; // Close the menu
             toggleButton.innerHTML = "☰"; // Change back to hamburger icon
             toggleButton.style.color = "black"; // Change color back to black
             toggleButton.classList.remove("active");
