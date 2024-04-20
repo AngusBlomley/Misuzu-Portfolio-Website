@@ -18,10 +18,14 @@
   display: none;
 }
 
-main p {
+.p1 {
   margin-left: 26%;
   font-size: 1em;
   margin-bottom: -50px;
+}
+
+.p2 {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -49,4 +53,17 @@ main p {
   #asset1-mobile {
     padding-left: 0px;
   }
+
+  .p1 {
+    display: none;
+  }
+
+  .p2 {
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-bottom: -70px;
+    font-size: 0.6em;
+  }
+
 }
