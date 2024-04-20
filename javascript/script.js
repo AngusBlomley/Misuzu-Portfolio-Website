@@ -7,43 +7,40 @@ function closeMenuOnClick() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var menuContainer = document.getElementById("menucontainer");
+    var menucontainer = document.getElementById("menucontainer");
     var toggleButton = document.getElementById("togglebutton");
 
     function toggleMenu() {
         if (toggleButton.classList.contains("active")) {
-            menuContainer.style.right = "-100%"; // Close the menu
+            menucontainer.style.right = "-100%";
             toggleButton.innerHTML = "☰";
             toggleButton.style.color = "black";
             toggleButton.classList.remove("active");
         } else {
-            menuContainer.style.right = "0px"; // Open the menu
+            menucontainer.style.right = "0px";
             toggleButton.innerHTML = "✖";
             toggleButton.style.color = "black";
             toggleButton.classList.add("active");
         }
     }
 
-    // Set click event for the toggleButton
     toggleButton.addEventListener('click', toggleMenu);
 
-    // Initialize the menu to be closed on page load
-    menuContainer.style.right = "-100%";
+    menucontainer.style.right = "-100%";
     toggleButton.classList.remove("active");
     toggleButton.innerHTML = "☰";
     toggleButton.style.color = "black";
 
-    // Close the menu when a link is clicked
     var links = document.querySelectorAll('#menucontainer a');
     links.forEach(function (link) {
         link.addEventListener('click', function () {
-            if (menuContainer.style.right === "0px") {
-                toggleMenu(); // This will close the menu
+            if (menucontainer.style.right === "0px") {
+                toggleMenu();
             }
         });
     });
+    console.log("Menu initial state:", menucontainer.style.right);
 
-    // Smooth scrolling for anchor links
     var scrollLinks = document.querySelectorAll('a[href^="#"]');
     scrollLinks.forEach(function (scrollLink) {
         scrollLink.addEventListener('click', function (e) {
@@ -128,5 +125,3 @@ document.addEventListener('DOMContentLoaded', function () {
         character.style.opacity = '1'; // This will trigger the fadeIn animation
     });
 });
-
-
