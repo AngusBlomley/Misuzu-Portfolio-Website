@@ -18,6 +18,12 @@
   display: none;
 }
 
+main p {
+  margin-left: 26%;
+  font-size: 1em;
+  margin-bottom: -50px;
+}
+
 @media (max-width: 768px) {
   #asset1-desktop,
   #asset2-desktop,

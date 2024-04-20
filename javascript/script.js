@@ -10,24 +10,28 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuContainer = document.getElementById("menucontainer");
     var toggleButton = document.getElementById("togglebutton");
 
-    // Function to open or close the menu
     function toggleMenu() {
-        // Check if the menu is open by checking the 'active' class
         if (toggleButton.classList.contains("active")) {
             menuContainer.style.right = "-100%"; // Close the menu
-            toggleButton.innerHTML = "☰"; // Change back to hamburger icon
-            toggleButton.style.color = "black"; // Change color back to black
+            toggleButton.innerHTML = "☰";
+            toggleButton.style.color = "black";
             toggleButton.classList.remove("active");
         } else {
             menuContainer.style.right = "0px"; // Open the menu
-            toggleButton.innerHTML = "✖"; // Change to 'X' icon
-            toggleButton.style.color = "black"; // Change color to white
+            toggleButton.innerHTML = "✖";
+            toggleButton.style.color = "black";
             toggleButton.classList.add("active");
         }
     }
 
     // Set click event for the toggleButton
     toggleButton.addEventListener('click', toggleMenu);
+
+    // Initialize the menu to be closed on page load
+    menuContainer.style.right = "-100%";
+    toggleButton.classList.remove("active");
+    toggleButton.innerHTML = "☰";
+    toggleButton.style.color = "black";
 
     // Close the menu when a link is clicked
     var links = document.querySelectorAll('#menucontainer a');

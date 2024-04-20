@@ -68,6 +68,12 @@ p {
   width: 80%;
 }
 
+#asset4-mobile {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .software {
   display: flex;
   flex-direction: row;
@@ -110,6 +116,12 @@ p {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
 
+section p {
+  margin-left: 19%;
+  font-size: 1.6vw;
+  margin-bottom: -10px;
+}
+
 /*Screen Formats*/
 @media (max-width: 768px) {
   main {
@@ -138,10 +150,18 @@ p {
   }
 
   #asset3 {
-    display: none;
+    display: block;
   }
 
-  
+  #asset4 {
+    display: block;
+  }
+
+  #asset4-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .software {
     display: flex;
