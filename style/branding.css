@@ -50,11 +50,16 @@ p {
 
 #asset1,
 #asset2,
-#asset3,
 #asset4 {
   display: block;
   margin: 0 auto 50px auto;
   width: 80%;
+}
+
+#asset3-mobile {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 100%;
 }
 
 #asset4 {
@@ -82,6 +87,13 @@ p {
   padding: 0 0 100px 0;
 }
 
+.color-scheme-container h3 {
+  padding-top: 20px;
+  width: 300px;
+  margin: 10px 20px 0 0;
+  flex-direction: row;
+}
+
 .colors {
   display: flex;
 }
@@ -96,42 +108,6 @@ p {
   color: black; 
   font-size: 0.75em;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
-}
-
-.color:nth-child(1) {
-  width: 400px;
-}
-
-.box {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
-}
-
-.box.start {
-  animation-play-state: running;
-}
-
-.box1 {
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-}
-
-.box2 {
-  animation-duration: 1s;
-  animation-delay: 0.8s; 
-}
-
-.box3 {
-  animation-duration: 1s;
-  animation-delay: 1.1s; 
-}
-
-.box4 {
-  animation-duration: 1s;
-  animation-delay: 1.4s;
-  color: white;
 }
 
 /*Screen Formats*/
@@ -151,16 +127,21 @@ p {
   }
 
   #asset1,
-  #asset2,
-  #asset3 {
+  #asset2 {
     display: block;
     margin: 0 auto 50px auto;
     width: 100%;
   }
 
-  #asset4 {
-    width: 100%;
+  #asset2 {
+    margin: 3px auto 20px auto;
   }
+
+  #asset3 {
+    display: none;
+  }
+
+  
 
   .software {
     display: flex;
@@ -174,25 +155,37 @@ p {
     flex: 1;
   }
   
-  .color-scheme-container,
-  .colors {
-    flex-direction: column; 
-  }
-
-  .color {
-    width: 100%; 
-  }
-
-  .software, .design {
+  .color-scheme-container {
+    display: flex;
     flex-direction: column;
+    align-items: left; /* Centers items horizontally if needed */
   }
-
+  
   .color-scheme-container h3 {
-    margin-bottom: 20px;
     width: 100%;
   }
 
-  .color:nth-child(1) {
-    width: 100%;
+  .color-scheme-container img,
+  .color-scheme-container {
+    width: 100%; /* Set the width to 100% of the container if needed */
+    padding: 10px 0;
   }
+  
+  .colors {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .color.box {
+    width:100%;
+    margin: 0;
+    height: 50px;
+  }
+
+  .box1 {
+    color: black;
+  }
+  
 }
