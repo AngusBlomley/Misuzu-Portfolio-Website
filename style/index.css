@@ -85,9 +85,9 @@
 
 #about img {
   max-width: 200px;
-  box-shadow: #333;
-  margin: 20px 0px;
-  border-radius: 100%;
+  float: right;
+  padding: 20px 0;
+  margin: 0;
 }
 
 #about h2 {
