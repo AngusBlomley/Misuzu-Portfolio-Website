@@ -8,6 +8,11 @@
   margin: 50px auto;
 }
 
+#asset3-desktop {
+  box-shadow: rgba(0, 0, 0, 0.35) -10px 5px 15px;
+  width: 49%;
+}
+
 #asset1-mobile,
 #asset2-mobile,
 #asset3-mobile,
